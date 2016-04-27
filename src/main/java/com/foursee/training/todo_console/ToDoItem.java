@@ -31,6 +31,7 @@ public class ToDoItem {
 	}
 
 	@Override
+	//auto-generated using eclipse
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
@@ -41,6 +42,7 @@ public class ToDoItem {
 	}
 
 	@Override
+	//auto-generated using eclipse
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
@@ -65,6 +67,7 @@ public class ToDoItem {
 	}
 
 	@Override
+	//auto-generated using eclipse	
 	public String toString() {
 		return "ToDoItem [priority=" + priority + ", dueBye=" + dueBye + ", message=" + message + "]";
 	}

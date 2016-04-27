@@ -54,4 +54,13 @@ public class PriorityDateComparatorTest {
 		assertTrue( underTest.compare( item, itemBefore) > 0);
 		assertTrue( underTest.compare( item, itemAfter) < 0);
 	}
+	@Test
+	public void itemsWithEqualPriorityAndDueDateShouldUseCaseSensitiveMessage(){
+		
+		LocalDate date = LocalDate.of(2016, 4, 26);
+		ToDoItem item = new ToDoItem( Priority.LOW, date, "A");
+		ToDoItem itemBefore = new ToDoItem( Priority.LOW, date, "a");		
+		assertTrue( underTest.compare( item, itemBefore) < 0);
+	}
+
 }

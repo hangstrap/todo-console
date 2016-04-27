@@ -28,6 +28,7 @@ mvn package
 ## Run app
 
 Run from command line
+
 mvn exec:java
 
 ## License
